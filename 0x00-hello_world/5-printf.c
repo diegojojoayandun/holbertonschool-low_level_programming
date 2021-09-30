@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* main - print a prhase ending with a new line */
+/**
+ * main - print a prhase ending with a new line
+ * the main function returns 0 is successful
+ */
 
 int main(void)
 {
