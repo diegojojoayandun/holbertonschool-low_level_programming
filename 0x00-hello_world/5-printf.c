@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*program to print a prhase*/
+/*main - print a prhase ending with a new line*/
 
 int main(void)
 {
