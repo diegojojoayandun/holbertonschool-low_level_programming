@@ -1,1 +1,1 @@
-First C Projects 0x00. C - Hello, World
+First C Projects at Holbertons School Cohort 16
