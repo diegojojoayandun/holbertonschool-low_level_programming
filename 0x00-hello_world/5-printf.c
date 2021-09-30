@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/**
- * main - print a prhase ending with a new line
- * Return 0 is successful
+
+/* main prints the text with proper ...
+ * Return: 0 if was success or any other number if not
  */
 
 int main(void)
