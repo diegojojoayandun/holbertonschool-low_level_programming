@@ -2,7 +2,7 @@
 
 /**
  * main - print a prhase ending with a new line
- * the main function returns 0 is successful
+ * Return 0 is successful
  */
 
 int main(void)
