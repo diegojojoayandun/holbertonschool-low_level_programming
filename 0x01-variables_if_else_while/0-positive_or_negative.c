@@ -1,14 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /*
  * main - prints if a random numbers is positive
  * negative or zero
  *
  * Return: 0 if was successful or any other if not
  */
-
 int main(void)
 {
 	int n;
@@ -24,8 +22,7 @@ int main(void)
 	}
 	else if (n < 0)
 	{
-		printf("%d is negative\n", n );
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
-
