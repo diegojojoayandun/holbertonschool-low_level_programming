@@ -5,13 +5,12 @@
 /**
  * main - prints if a random numbers is positive
  * negative or zero
- * 
  * Return: 0 if was successful or any other if not
  */
 
 int main(void)
 {
-	int n,res;
+	int n, res;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
