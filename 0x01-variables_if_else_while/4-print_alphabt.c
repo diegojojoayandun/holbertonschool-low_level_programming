@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints alpabhet avoid q and e,
- * Return: 0 if success 
+ * main - prints alphabet
+ * avoid q and e letters
+ * Return: Aways 0 (Sucess)
  */
 int main(void)
 {
@@ -10,7 +11,7 @@ int main(void)
 
 	while (ch <= 'z')
 	{
-		if (ch != 'q' && ch != 'e')
+		if (ch != 'e' && ch != 'q')
 		{
 			putchar(ch);
 		}
