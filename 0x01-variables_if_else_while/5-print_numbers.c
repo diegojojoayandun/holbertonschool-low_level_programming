@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-/*
+/**
  * main - prints the alphabet using the putchar function
- *
  * Return: 0 if success witout any error
  */
 
