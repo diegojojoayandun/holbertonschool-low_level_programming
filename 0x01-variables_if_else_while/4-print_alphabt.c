@@ -1,23 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet using the putchar function
- * avoid the q and e letters
- * Return: 0 if success witout any error
+ * main - prints alpabhet avoid q and e
+ * Return: 0 if success 
  */
-
 int main(void)
 {
-        char letter;
+	char ch = 'a';
 
-        for (letter = 'a'; letter <= 'z'; letter++)
-        {
-                if ((letter != 'q') && (letter != 'e'))
-                {
-                        putchar(letter);
-                }
-                
-        }
-        putchar('\n');
-        return (0);
+	while (ch <= 'z')
+	{
+		if (ch != 'q' && ch != 'e')
+		{
+			putchar(ch);
+		}
+		ch++;
+	}
+	putchar('\n');
+	return (0);
 }
