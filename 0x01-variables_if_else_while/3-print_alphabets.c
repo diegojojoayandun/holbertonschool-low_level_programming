@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-/*
+/**
  * main - prints the alphabet in lower case and
  * uppercase using the putchar function
- * 
  * Return: 0 if success witout any error
  */
 
@@ -15,8 +14,6 @@ int main(void)
 	{
 		putchar(letter);
 	}
-		
-
 	for (letter = 'A'; letter <= 'Z'; letter++)
 	{
 		putchar(letter);
