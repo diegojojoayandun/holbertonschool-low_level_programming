@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints alpabhet avoid q and e
+ * main - prints alpabhet avoid q and e,
  * Return: 0 if success 
  */
 int main(void)
