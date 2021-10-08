@@ -7,7 +7,7 @@
  */
 int _isupper(int c)
 {
-	int _bool = ((c >= 'A' && c <= 'Z'));
+	int _bool = (c >= 'A' && c <= 'Z');
 
 	return (_bool);
 }
