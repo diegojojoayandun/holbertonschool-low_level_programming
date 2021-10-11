@@ -1,2 +1,3 @@
-C projects, and exercises from Holberton School Cohort16
-
+===============================
+=0x04-pointers_arrays_strings =
+===============================
