@@ -23,11 +23,11 @@ char *rot13(char *s)
 			if (s[i] == a[j])
 			{
 				s[i] = b[j];
-				goto FIRST_LOOP;
+				break;
 			}
 			j++;
 		}
-FIRST_LOOP: i++;
+		i++;
 	}
 	return (s);
 }
