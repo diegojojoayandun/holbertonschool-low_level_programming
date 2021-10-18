@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * *_strspn - gets the length of  prefix substring
- * @s: string
- * @accept: string with a strin to be compare
- * Return: pointer
- */
+* *_strspn - gets the length of  prefix substring
+* @s: string
+* @accept: string with a strin to be compare
+* Return: pointer
+*/
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j, f, sw;
@@ -28,6 +28,5 @@ unsigned int _strspn(char *s, char *accept)
 			return (count);
 		}
 	}
-
 	return (0);
 }
