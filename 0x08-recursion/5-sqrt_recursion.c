@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt2 - get natural square on number n
+ * _sqrt2 - get natural square on number n
  * @n: number
  * @i: iterator
  * Return: square of n number
@@ -9,12 +9,11 @@
 int _sqrt2(int n, int i)
 {
 	if (i * i > n)
-		 return (-1);
+		return (-1);
 	if (i * i == n)
 		return (i);
 	return (_sqrt2(n, i + 1));
 }
-
 /**
  * _sqrt_recursion -  returns the natural square root of a number
  * @n: number
