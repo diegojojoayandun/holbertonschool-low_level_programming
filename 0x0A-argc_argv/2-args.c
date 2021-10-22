@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 /**
  * main - prints all arguments it receives,
@@ -9,8 +9,6 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-
 	while (argc--)
 	{
 		printf("%s\n", *argv++);
