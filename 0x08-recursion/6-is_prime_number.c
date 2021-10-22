@@ -15,7 +15,7 @@ int is_prime_number(int n)
 }
 
 /**
- * prime - find prime number
+ * prime2 - find prime number
  * @n: number
  * @x: iterador
  * Return: 1 for prime number othercase 0
