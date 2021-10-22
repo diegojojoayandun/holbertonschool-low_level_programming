@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 int prime2(int n, int i);
 
@@ -27,5 +27,5 @@ int prime2(int n, int x)
 	if (n % x == 0)
 		if (x > 0)
 			return (0);
-	return (actual_prime(n, x - 1));
+	return (prime2(n, x - 1));
 }
