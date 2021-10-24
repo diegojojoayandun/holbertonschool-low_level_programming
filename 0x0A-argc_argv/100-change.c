@@ -57,6 +57,6 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	printf("%d\n", coins);
+	printf("%d\n", _change);
 	return (0);
 }
