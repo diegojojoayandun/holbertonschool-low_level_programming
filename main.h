@@ -1,1 +1,1 @@
-reset_to_98(int *n);
+char *create_array(unsigned int size, char c);
