@@ -1,3 +1,1 @@
-==========================
-= 0x0B. C - malloc, free =
-==========================
+Holberton School Low Level Programming
