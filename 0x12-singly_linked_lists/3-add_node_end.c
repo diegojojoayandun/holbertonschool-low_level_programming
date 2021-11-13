@@ -1,66 +1,41 @@
-#include "lists.h"
+#include <stdlib.h>
 #include <string.h>
-int _strlen(const char *s);
+#include "lists.h"
 
 /**
- * add_node_end - adds a new node at the end of a list_t list.
- * @head: linked list of list_t.
- * @str: name strings.
+ * add_node_end - adds a new node at the end of a linked list
+ * @head: double pointer to the list_t list
+ * @str: string to put in the new node
  *
- * Return: the length the linked list.
+ * Return: address of the new element, or NULL if it failed
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
-	list_t *temp;
-	char *string;
-	int length;
+	list_t *temp = *head;
+	unsigned int len = 0;
+
+	while (str[len])
+		len++;
 
 	new = malloc(sizeof(list_t));
-	if (new == NULL)
-	{
-		free(new);
+	if (!new)
 		return (NULL);
-	}
 
-	string = strdup(str);
-	length = _strlen(str);
-
-	(*new).str = string;
-	(*new).len = length;
-	(*new).next = NULL;
+	new->str = strdup(str);
+	new->len = len;
+	new->next = NULL;
 
 	if (*head == NULL)
 	{
 		*head = new;
+		return (new);
 	}
-	else
-	{
-		for (temp = *head; (*temp).next != NULL; temp = (*temp).next)
-		{
-			;
-		}
-		(*temp).next = new;
-	}
+
+	while (temp->next)
+		temp = temp->next;
+
+	temp->next = new;
 
 	return (new);
-}
-
-/**
- *_strlen - returns the length of a string.
- *@s: string to avaluate.
- *
- *Description: The function take a string and iterate it with a loop while
- *until the value '\0'. The times iteration are saved in a int variable 'i'.
- *Return: the length of a string.
- **/
-int _strlen(const char *s)
-{
-	int i = 0;
-
-	while (*(s + i) != '\0')
-	{
-		i++;
-	}
-	return (i);
 }
