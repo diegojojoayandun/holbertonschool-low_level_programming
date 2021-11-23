@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 		if (w != r)
 			err_handler(argv[2], 99, 0);
 
-		r = read(fileto, buffer, 1024);
+		r = read(filefrom, buffer, 1024);
 		if (r < 0)
 			err_handler(argv[1], 98, 0);
 	}
