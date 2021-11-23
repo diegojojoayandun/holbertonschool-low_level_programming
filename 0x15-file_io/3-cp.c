@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 	r = read(filefrom, buffer, 1024);
 	if (r < 0)
 		err_handler(argv[1], 98, 0);
-	while (r > 0)
+	while (r == 1024)
 	{
 		w = write(fileto, buffer, r);
 		if (w != r)
