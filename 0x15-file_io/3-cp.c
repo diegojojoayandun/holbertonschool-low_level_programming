@@ -3,7 +3,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <sys/types.h>
-
+#define permisions S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH
 /**
  * err_handler - error handler and print msg
  * @fd: File descriptor of the file
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 	if (filefrom < 0)
 		err_handler(argv[1], 98, 0);
 
-	fileto = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fileto = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, permisions);
 	if (fileto < 0)
 		err_handler(argv[2], 99, 0);
 	r = read(filefrom, buffer, 1024);
