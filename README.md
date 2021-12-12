@@ -8,7 +8,7 @@ The primary focus of Foundations is to achieve mastery of fundamental engineerin
 
 ## First Trimester:
 ### Intro to:
-`Emacs
+```Emacs
 Vim
 Git/Github
 Vagrant
@@ -32,4 +32,4 @@ Basics
 Permissions
 Redirections
 Syscalls
-Static Libraries`
+Static Libraries```
