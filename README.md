@@ -32,4 +32,4 @@ Basics
 Permissions
 Redirections
 Syscalls
-Static Libraries```
+Static Libraries
