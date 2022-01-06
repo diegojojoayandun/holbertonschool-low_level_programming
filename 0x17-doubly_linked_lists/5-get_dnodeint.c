@@ -3,7 +3,7 @@
 /**
  * get_dnodeint_at_index - Gets a node value for its index
  * @head: pointer to the list
- *
+ * @index: index to search corresponding node
  * Return: number of nodes in the list
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
@@ -12,8 +12,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	if (head == NULL)
 		return (0);
-
-    for(i = 0; head != NULL && i < index; i++)
+	for (i = 0; head != NULL && i < index; i++)
 		head = (*head).next;
 
 	return (head ? head : NULL);
